@@ -71,15 +71,11 @@ _sudo () {
 
 echo "Installing deps..."
 sudo apt-get install -y \
-    libusb-1.0-0 \
-    libunwind-dev \
-    libavcodec57 \
-    libavformat57 \
-    libswscale4 \
-    libswresample2 \
-    libavutil55 \
-    libusb-1.0-0 \
-    libgtkmm-2.4-dev
+    libraw1394-11 \
+    libgtkmm-2.4-dev \
+    libglademm-2.4-dev \
+    libgtkglextmm-x11-1.2-dev \
+    libusb-1.0-0
 
 # Go to SDK
 cd $workdir
