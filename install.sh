@@ -95,7 +95,7 @@ sudo dpkg -i flycapture-doc-2*
 sudo dpkg -i updatorgui*
 
 # Taken from configure_spinnaker.sh
-lemurs_echo "Adding user ${user} to group ${grpname}."
+echo "Adding user ${user} to group ${grpname}."
 sudo groupadd -f $grpname
 sudo usermod -a -G $grpname $user
 echo "UDEV rules must be installed separately ..."
